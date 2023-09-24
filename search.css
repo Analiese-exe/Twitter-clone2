@@ -1,0 +1,157 @@
+:root{
+    --twitter-color:#50b7f5;
+    --twitter-background: #f0f0f0;
+    --faint-text: #676a6c ;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 0.75fr minmax(500px, 3fr) 1.2fr;
+    gap: 0.2em;
+    grid-template-rows: auto;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+/*search section*/
+.search-bar{
+    background-color: var(--twitter-background);
+    border-radius: 40px;
+    padding: 1em;
+    margin: 0.3em auto;
+    color: var(--faint-text);
+}
+.search-input{
+    font-size: 0.5em;
+    width: 22em;
+    height: 5em;
+    background-color: var(--twitter-background);
+    border: none;
+    outline: none;
+}
+.search-input ::placeholder{
+    font-size: 0.5em;
+}
+.search-bar .fa-solid{
+    margin-right: 1em;
+}
+.subscribe-container{
+    background-color: var(--twitter-background);
+    border-radius: 40px;
+    padding: 1em;
+    margin: 0.3em auto;
+    font-weight: 700;
+}
+ .subscribe-container button{
+    border-radius: 40px;
+    border: transparent;
+    color: white;
+    background-color: black;
+    padding: 0.9em;
+    font-weight: 800;
+ }
+ .subscribe-container h3{
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 0.5em 0.2em;
+ }
+ .subscribe-container h5{
+    font-size: 1.05em;
+    font-weight: 700;
+    margin: 0.5em 0.2em;
+ }
+ .trend-container{
+    background-color: var(--twitter-background);
+    border-radius: 40px;
+    padding: 1em;
+    margin: 0.3em auto;
+    font-weight: 700;
+ }
+ ol{
+    padding: 1em;
+ }
+ .max-text{
+    padding: 0.2em 0;
+ }
+ .mini-text{
+    padding: 0.2em 0;
+    display: inline;
+ }
+  ol span{
+    display: flex;
+    flex-direction: column;
+ }
+ ol li{
+    color: var(--faint-text);
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 0.4em;
+ }
+ ol span{
+    color: black;
+    font-weight: 700;
+    font-size: 1.3em;
+ }
+ span .mini-text{
+    color: var(--faint-text);
+    font-size: 0.8em;
+    font-weight: 400;
+ }
+ span .blue{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--twitter-color);
+    display: inline;
+ }
+ .show-more{
+    font-weight: 400;
+    color: var(--twitter-color);
+    padding: 0 0.5em;
+ }
+ .who-to-follow{
+    background-color: var(--twitter-background);
+    border-radius: 40px;
+    padding: 1em;
+    margin: 0.3em auto;
+    font-weight: 700;
+ }
+ .who-to-follow h2{
+    padding: 0.3em;
+    font-weight: 800;
+    margin-left: 0.4em;
+    padding-bottom: 0;
+ }
+ .name-and-images{
+    display: flex;
+ }
+ .follow-option{
+    display: flex;
+    gap: 0.3em;
+    justify-content: space-between;
+    margin: 1.4em;
+    margin-top: 1.6em;
+ }
+ .follow-names{
+    display: flex;
+    flex-direction: column;
+ }
+.follow{
+    background-color: black;
+    color: white;
+    padding: 0.2em 1.7em;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+}
+.follow-option .profile-images{
+    border-radius: 50%;
+}
